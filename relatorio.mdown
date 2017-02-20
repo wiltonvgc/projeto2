@@ -10,7 +10,7 @@
 ## Laboratório 1
 
 ### Topologia:
-[Imagem Topologia](/lab1/lab1-Prints/Topologia%20Lab1.jpg)
+![Imagem Topologia](/lab1/lab1-Prints/Topologia%20Lab1.jpg)
 
 ### Breve Explicação do Código
   Definição dos equipamentos de rede e suas ligações. Note que o **PC-PT Terminal** não é inserido por se tratar apenas de um console utilizado para configurar o roteador. 
