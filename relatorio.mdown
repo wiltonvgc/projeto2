@@ -4,13 +4,16 @@
 
  * [Lab 1: Configuração Básica de Roteadores Cisco](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-1)
  * [Lab 2: Configuração de Roteamento Estático](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-2)
- * [Lab 3: Configuração de Roteamento Dinâmico](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-2)
+ * [Lab 3: Configuração de Roteamento Dinâmico](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-3)
+ * [Dificuldades encontradas](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#diiculdades-econtradas)
+ * [Referências](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#referências)
 
 
 ## Laboratório 1
 
 ### Topologia:
-![Imagem Topologia](/lab1/lab1-Prints/Topologia%20Lab1.jpg)
+![Imagem Topologia1](/lab1/lab1-Prints/Topologia%20Lab1.jpg)
+
 
 ### Breve Explicação do Código
   Definição dos equipamentos de rede e suas ligações. Note que o **PC-PT Terminal** não é inserido por se tratar apenas de um console utilizado para configurar o roteador. 
@@ -28,7 +31,6 @@ class Topologia(Topo):
 	self.addLink(r0,s0)						#link switch to router
 	return
 ``` 
-  
 
 Comandos usados no Mininet
 ```python
@@ -48,7 +50,7 @@ Indica que o **IP Forward** está ativo
         	router.waitOutput() 
  ```
 
-Configura o roteador **r0** usando Zebra
+Configura o roteador `r0` usando Zebra
  ```python
  for router in net.switches:
         if(router.name == 'r0'):
@@ -63,14 +65,42 @@ Configura interfaces dos hosts indicando o **Default Gateway** com o **IP** do *
     	host.cmd("route add default gw %s" % '192.168.0.254')
 ```
 
-## Laboratório 2:
+## Laboratório 2
 ### Topologia:
-[Imagem]
+![Imagem Topologia2](/lab2/lab2-Prints/Topologia%20Lab2.jpg)
 
-### Breve Explicação do Código:
+### Breve Explicação do Código [`lab1.py`](/lab2/lab2.py):
+Configura as interfaces dos roteadores `rA`e `rB`com **zebra**
+```python
+for router in net.switches:
+        if(router.name=='r1' or router.name=='r2'):
+       		router.cmd("/usr/lib/quagga/zebra -f conf/zebra-%s.conf -d -i /tmp/zebra-%s.pid > logs/%s-zebra-stdout 2>&1" % (router.name, router.name, router.name))
+        	router.waitOutput()
+```
+### Breve Explicação dos Código de Configuração [`zebra.conf`](/lab2/conf/)
+```python
 
-## Laboratório 3:
+```
+
+
+
+## Laboratório 3
 ### Topologia:
-[Imagem]
+![Imagem Topologia3](/lab3/lab3-Prints/Topologia%20lab3.jpg)
 
-### Breve Explicação do Código:
+### Breve Explicação do Código [`lab3.py`](/lab3/lab3.py):
+```
+``` 
+
+### Breve Explicação dos arquivos de [`configuração`](/lab3/conf)
+```
+
+```
+## Dificuldades Encontradas
+
+## Referências
+* Imagens geradas com o software [Cisco Packet Tracer e os labs de demonstração](http://labcisco.blogspot.com.br/p/laboratorios.html)
+* [Máquinas Virtuais](http://mininet.org/download/) com Mininet já instalado 
+* Apoio ao uso de [Quagga](http://www.nongnu.org/quagga/docs/docs-info.html#Interface-Commands)
+
+
