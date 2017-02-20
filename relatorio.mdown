@@ -2,15 +2,15 @@
 
 ## Laboratórios utilizados:
 
- * Lab 1: Configuração Básica de Roteadores Cisco
- * Lab 2: Configuração de Roteamento Estático
- * Lab 3: Configuração de Roteamento Dinâmico
+ * [Lab 1: Configuração Básica de Roteadores Cisco](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-1)
+ * [Lab 2: Configuração de Roteamento Estático](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-2)
+ * [Lab 3: Configuração de Roteamento Dinâmico](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-2)
 
 
 ## Laboratório 1
 
 ### Topologia:
-[Imagem]
+[Imagem Topologia](/lab1/lab1-Prints/Topologia%20Lab1.jpg)
 
 ### Breve Explicação do Código
   Definição dos equipamentos de rede e suas ligações. Note que o **PC-PT Terminal** não é inserido por se tratar apenas de um console utilizado para configurar o roteador. 
