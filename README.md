@@ -1,11 +1,11 @@
 # Projeto 2 - Experiências de Roteamento com Mininet
 
 **Grupo 9**
+  
   Bruno Murari Lucas
   Thiago Arraiol Casaes                  
   Wilton Vicente Gonçalves da Cruz    
   
-
 
 ## Laboratórios utilizados:
 
@@ -87,7 +87,7 @@ for router in net.switches:
 ```
 ### Breve Explicação dos Código de Configuração [`zebra.conf`](/lab2/conf/)
 As interfaces dos roteadores são definidas nos arquivos de configuração do zebra.
-No trecho abaixo os atributos da interface 'eth1' do roteador 'r1' são definidos
+No trecho abaixo os atributos da interface `eth1` do roteador `r1` são definidos
 ```
 interface r1-eth1
   ip address 192.168.1.254/24
