@@ -6,7 +6,7 @@
 	Thiago Arraiol Casaes
 	Wilton Vicente Gonçalves da Cruz    
   
-## Laboratórios utilizados:
+## Índice
 
  * [Lab 1: Configuração Básica de Roteadores Cisco](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-1)
  * [Lab 2: Configuração de Roteamento Estático](https://github.com/wiltonvgc/projeto2/blob/master/relatorio.mdown#laboratório-2)
